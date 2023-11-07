@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddActivity">
+
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginHorizontal="15dp"
+       app:layout_constraintTop_toTopOf="parent"
+       android:gravity="center">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginVertical="35dp"
+           android:fontFamily="@font/corbelb"
+           android:textAlignment="center"
+           android:textSize="42dp"
+           android:text="CREATE CONTACT" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginVertical="10dp">
+
+           <TextView
+               style="@style/textTitle"
+               android:text="@string/name" />
+
+           <EditText
+               android:id="@+id/inputName"
+               style="@style/inputStyle"
+               android:hint="@string/hintName" />
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginVertical="10dp">
+
+           <TextView
+               style="@style/textTitle"
+               android:text="@string/dob" />
+
+           <TextView
+               android:id="@+id/inputDate"
+               style="@style/inputStyle"
+               android:hint="@string/hintDob" />
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginVertical="10dp">
+           <TextView
+               style="@style/textTitle"
+               android:text="@string/email" />
+           <EditText
+               android:id="@+id/inputEmail"
+               style="@style/inputStyle"
+               android:inputType="textEmailAddress"
+               android:hint="@string/hintEmail"/>
+       </LinearLayout>
+
+       <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginVertical="10dp">
+             <TextView
+                 style="@style/textTitle"
+                 android:text="@string/phone" />
+             <EditText
+                 android:id="@+id/inputPhone"
+                 style="@style/inputStyle"
+                 android:text=""
+                 android:inputType="number"
+                 android:hint="@string/hintPhone"/>
+         </LinearLayout>
+
+       <TextView
+           style="@style/textTitle"
+           android:layout_marginTop="10dp"
+           android:text="@string/avatar"
+           android:layout_gravity="left"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginVertical="10dp"
+           android:gravity="center">
+
+           <com.google.android.material.button.MaterialButton
+               android:id="@+id/previousImage"
+               style="@style/button"
+               android:rotation="180" />
+
+           <pl.droidsonroids.gif.GifImageView
+               android:id="@+id/avatar"
+               android:layout_width="200dp"
+               android:layout_height="200dp"
+               android:scaleType="centerCrop"
+               android:src="@drawable/bomman" />
+
+           <com.google.android.material.button.MaterialButton
+               android:id="@+id/nextImage"
+               style="@style/button" />
+       </LinearLayout>
+         <com.google.android.material.button.MaterialButton
+             android:id="@+id/saveBtn"
+             android:layout_width="230dp"
+             android:layout_height="wrap_content"
+             android:textSize="20dp"
+             android:textAlignment="center"
+             android:fontFamily="@font/corbelb"
+             app:cornerRadius="10dp"
+             android:backgroundTint="@color/save_button"
+             android:text="SAVE DETAILS"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/homeButton"
+        style="@style/floatingBtn"
+        android:backgroundTint="@color/button_color"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/baseline_home_24"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

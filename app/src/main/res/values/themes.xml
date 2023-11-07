@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.ContactDatabase" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#3bc09a</item>
+        <item name="colorSecondary">#00BA85</item>
+        <item name="fontFamily">@font/corbel</item>
+    </style>
+
+    <style name="Theme.ContactDatabase" parent="Base.Theme.ContactDatabase" />
+
+    <style name="inputStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:paddingHorizontal">15dp</item>
+        <item name="android:paddingVertical">7dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:background">@drawable/input_border</item>
+    </style>
+
+    <style name="textTitle">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="fontFamily">@font/corbelb</item>
+        <item name="android:textSize">21dp</item>
+    </style>
+
+    <style name="textDetailTitle">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">5dp</item>
+        <item name="android:textColor">#636363</item>
+        <item name="android:textSize">18dp</item>
+        <item name="fontFamily">@font/corbelb</item>
+    </style>
+
+    <style name="button" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:backgroundTint">#00000000</item>
+        <item name="iconTint">#5C5C5C</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:textSize">50dp</item>
+        <item name="icon">@drawable/baseline_double_arrow_24</item>
+    </style>
+
+    <style name="floatingBtn" parent="Widget.MaterialComponents.ExtendedFloatingActionButton" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">30dp</item>
+        <item name="tint">@color/white</item>
+    </style>
+
+
+
+    <style name="textDetail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="fontFamily">@font/corbel</item>
+    </style>
+
+    <style name="gifImage">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+</resources>

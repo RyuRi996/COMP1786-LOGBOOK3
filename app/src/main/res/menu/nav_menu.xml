@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:title="home"
+        android:icon="@drawable/baseline_home_24"
+        android:iconTint="#7bb85a"/>
+    <item android:id="@+id/Add"
+        android:title="add"
+        android:icon="@drawable/baseline_person_add_24"
+        android:iconTint="#7bb85a"/>
+</menu>
